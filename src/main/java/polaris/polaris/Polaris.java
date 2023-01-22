@@ -15,7 +15,7 @@ public final class Polaris extends JavaPlugin implements Listener {
             getServer().getPluginManager().disablePlugin(this);
             return;
         }
-
+        this.getCommand("eco").setExecutor(new CurrencyControll());
         System.out.println(ChatColor.GREEN + "폴라리스 이코노미 실행성공");
     }
     private static Economy econ = null;

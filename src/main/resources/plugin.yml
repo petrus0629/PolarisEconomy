@@ -2,3 +2,6 @@ name: PolarisEconomy
 version: '${project.version}'
 main: polaris.polaris.Polaris
 api-version: 1.16
+
+commands:
+  eco:
