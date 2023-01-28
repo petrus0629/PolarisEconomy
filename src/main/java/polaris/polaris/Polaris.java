@@ -17,7 +17,7 @@ public final class Polaris extends JavaPlugin implements Listener {
         if (!setupEconomy()) {
             Bukkit.shutdown();
         }
-
+        this.getCommand("eco").setExecutor(new CurrencyControll());
         System.out.println(ChatColor.GREEN + "폴라리스 이코노미 실행성공");
 
         this.getCommand("은행").setExecutor(new CurrencyControll());
